@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1a1a2e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ff99;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('images/ewaste.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #00b894;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background: #019870;
+}
+
+/* Card Sections */
+.card {
+  background: #f8f8f8;
+  margin: 30px auto;
+  padding: 30px;
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Form */
+form input, form button {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #00b894;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #019870;
+}
+
+/* Tracker Table */
+#wasteTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#wasteTable th, #wasteTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+#wasteTable th {
+  background: #2c3e50;
+  color: white;
+}
+
+#wasteTable tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.clear-btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: darkred;
+}
+
+/* Tips */
+#tips {
+  padding: 40px;
+  text-align: center;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tip {
+  background: #dfe6e9;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #00ff99;
+  text-decoration: none;
+}
+

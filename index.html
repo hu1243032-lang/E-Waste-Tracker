@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Waste Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">♻️ E-Waste Tracker</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#report">Report</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#tips">Tips</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Track & Recycle Your E-Waste</h1>
+      <p>Report your electronic waste and help protect the environment.</p>
+      <button onclick="scrollToForm()">♻️ Report Now</button>
+    </div>
+  </section>
+
+  <!-- Report Form -->
+  <section id="report" class="card">
+    <h2>Report Your E-Waste</h2>
+    <form id="ewasteForm">
+      <input type="text" id="device" placeholder="Device Name (e.g., Laptop)" required>
+      <input type="text" id="location" placeholder="Location" required>
+      <input type="date" id="date" required>
+      <button type="submit">Submit Report</button>
+    </form>
+  </section>
+
+  <!-- Tracker Table -->
+  <section id="tracker" class="card">
+    <h2>📋 Reported E-Waste</h2>
+    <table id="wasteTable">
+      <thead>
+        <tr>
+          <th>Device</th>
+          <th>Location</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="wasteBody">
+        <!-- Reports will appear here -->
+      </tbody>
+    </table>
+    <button class="clear-btn" onclick="clearReports()">🗑️ Clear All Reports</button>
+  </section>
+
+  <!-- Tips -->
+  <section id="tips">
+    <h2>💡 Recycling Tips</h2>
+    <div class="tips-grid">
+      <div class="tip">♻️ Donate working electronics to NGOs.</div>
+      <div class="tip">♻️ Take broken devices to certified recyclers.</div>
+      <div class="tip">♻️ Sell old gadgets to authorized resellers.</div>
+      <div class="tip">♻️ Never throw e-waste in regular bins.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>📧 Contact: <a href="mailto:info@ewastetracker.com">info@ewastetracker.com</a></p>
+    <p>🌍 Follow us @EwasteTracker</p>
+    <p>&copy; 2025 E-Waste Tracker Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
