@@ -4,6 +4,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Floating Icons Container */
+.floating-icons img {
+  position: absolute;
+  width: 60px;
+  opacity: 0.8;
+}
+
+/* Different positions */
+.phone  { top: 20%; left: 10%; animation: float 6s infinite ease-in-out; }
+.laptop { top: 40%; left: 80%; animation: float 7s infinite ease-in-out reverse; }
+.battery { top: 70%; left: 20%; animation: float 5s infinite ease-in-out; }
+.tv { top: 25%; left: 60%; animation: float 8s infinite ease-in-out reverse; }
+
+/* Floating Animation */
+@keyframes float {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-25px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
 
 body {
   font-family: Arial, sans-serif;
