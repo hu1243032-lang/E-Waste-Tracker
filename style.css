@@ -17,13 +17,6 @@
 .battery { top: 70%; left: 20%; animation: float 5s infinite ease-in-out; }
 .tv { top: 25%; left: 60%; animation: float 8s infinite ease-in-out reverse; }
 
-/* Floating Animation */
-@keyframes float {
-  0%   { transform: translateY(0) rotate(0deg); }
-  50%  { transform: translateY(-25px) rotate(10deg); }
-  100% { transform: translateY(0) rotate(0deg); }
-}
-
 
 body {
   font-family: Arial, sans-serif;
